@@ -1,0 +1,10 @@
+Koen Olij
+Variant A
+
+Abdikani Muse Adan
+Variant B 
+Merge with A
+
+Ram Ramhamdani
+Variant C
+Final merging A,B and C
