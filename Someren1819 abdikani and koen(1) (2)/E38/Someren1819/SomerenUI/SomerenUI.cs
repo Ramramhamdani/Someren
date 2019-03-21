@@ -76,7 +76,7 @@ namespace SomerenUI
 
                 // show students
                 pnl_Teachers.Show();
-                
+
 
                 // fill the students listview within the students panel with a list of students
                 SomerenLogic.Teacher_Service teachService = new SomerenLogic.Teacher_Service();
@@ -173,6 +173,11 @@ namespace SomerenUI
 
                 }
             }
+            else if (panelName == "Revenue")
+            {
+                lbl_Students.Text = "Revenue";
+                pnl_Students.Show();
+            }
 
         }
 
@@ -243,6 +248,18 @@ namespace SomerenUI
             Room room = new Room();
             room.Type = false;
             showPanel("StudentRoom");
+        }
+
+        private void revenueToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Revenue revenue = new Revenue();
+            showPanel("Revenue");
+            revenue.ShowDialog();
+        }
+
+        private void lbl_Students_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
